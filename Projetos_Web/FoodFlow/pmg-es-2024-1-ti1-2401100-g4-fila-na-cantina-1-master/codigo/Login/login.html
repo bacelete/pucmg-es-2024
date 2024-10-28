@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Food Flow</title>
+</head>
+<body>
+    <main>
+        <section class="container-registro active" id="section-login-cliente">
+            <h1>Login Clientes</h1>
+            <form action="">
+                <input type="text" placeholder="Nome:" class="input-login">
+                <input type="email" placeholder="Email: example@gmail.com" class="input-login" id="email-cliente-login">
+                <input type="password" placeholder="Senha: ************" class="input-login" id="psswrd-cliente-login">
+                <div class="doido">
+                    <span class="manter-login">
+                        <input type="checkbox" name="" id="">
+                        <p>Manter Login</p>
+                    </span>
+                    <a href="#" onclick="alternarEsqueceuSenha()">Esqueceu sua senha?</a>
+                </div>
+                <input type="submit" value="ENTRAR" class="btn-login" id="btn-login-cliente">
+            </form>
+            <p class="ir-login">Não tem uma conta? <a href="#" onclick="alternarCadastroCliente()">Cadastre-se</a></p>
+            <p class="ir-login">Entrar como Estabelecimento. <a href="#" onclick="alternarLoginEmpresa()">Entrar</a></p>
+        </section>
+        <section class="container-registro" id="section-login-empresa">
+            <h1>Login Empresa</h1>
+            <form action="">
+                <input type="text" placeholder="CNPJ:" class="input-login">
+                <input type="email" placeholder="Email: example@gmail.com" class="input-login" id="email-empresa-login">
+                <input type="password" placeholder="Senha: ************" class="input-login" id="psswrd-empresa-login">
+                <div class="doido">
+                    <span class="manter-login">
+                        <input type="checkbox" name="" id="">
+                        <p>Manter Login</p>
+                    </span>
+                    <a href="#" onclick="alternarEsqueceuSenha()">Esqueceu sua senha?</a>
+                </div>
+                <input type="submit" value="ENTRAR" class="btn-login" id="btn-login-empresa">
+            </form>
+            <p class="ir-login">Criar conta para estabelecimento. <a href="#" onclick="alternarCadastroEmpresa()">Cadastre-se</a></p>
+            <p class="ir-login">Entrar como cliente. <a href="#" onclick="alternarLoginCliente()">Entrar</a></p>
+        </section>
+        <section class="container-registro" id="section-cadastro-cliente">
+            <h1>Cadastro Cliente</h1>
+            <form action="">
+                <input type="text" placeholder="Nome Completo:" class="input-login" id="nome-cliente" required>
+                <input type="email" placeholder="Email: example@gmail.com" class="input-login" id="email-cliente" required>
+                <input type="password" placeholder="Senha: ************" class="input-login" id="psswrd-cliente" required>
+                <input type="password" placeholder="Confirmar Senha: ************" class="input-login" id="confirmar-senha-cliente" required>
+                <input type="submit" value="REGISTRAR" class="btn-login btn-sla" id="btn-cadastro-cliente">
+            </form>
+            <p class="ir-login">Já possui uma conta? <a href="#" onclick="alternarLoginCliente()">Entrar</a></p>
+        </section>
+        <section class="container-registro" id="section-cadastro-empresa">
+            <h1>Cadastro Empresa</h1>
+            <form action="">
+                <input type="text" placeholder="Nome do Estabelecimento" class="input-login" id="nome-empresa" required>
+                <input type="email" placeholder="Email: example@gmail.com" class="input-login" id="email-empresa" required>
+                <input type="password" placeholder="Senha: ************" class="input-login" id="psswrd-empresa" required>
+                <input type="password" placeholder="Confirmar Senha: ************" class="input-login" required>
+                <div class="documento-cadastro">
+                    <label for="input-file" id="file-label">Documento assinado pela PUC-Minas <i class="ph-bold ph-file-arrow-up"></i></label>
+                    <input type="file" id="input-file" required>
+                </div>
+                <input type="text" placeholder="CNPJ:" class="input-login" id="cnpj" required>
+                <input type="submit" value="REGISTRAR" class="btn-login" id="btn-cadastro-empresa">
+            </form>
+            <p class="ir-login">Já possui uma conta? <a href="#" onclick="alternarLoginEmpresa()">Entrar</a></p>
+        </section>
+        <!-- TELA DE ESQUECEU A SENHA: -->
+        <section class="container-registro" id="section-esqSenha">
+            <img src="../assets/img/Forgot password-amico.svg" />
+            <h1>Esqueceu sua senha?</h1>
+            <h2>Informe seu endereço de email e enviaremos um link para
+                você redefinir a senha:</h2>
+                <form>
+                <input type="email" placeholder="" class="input-esqSenha" id="esqSenha" required>
+                <input type="submit" value="ENVIAR" class="btn-login">
+                </form>
+            <h3 class="VaL-btn" onclick="alternarLoginCliente()">VOLTAR AO LOGIN</h3>
+        </section>
+    </main>
+    <script src="login.js"></script>
+    <script type="module" src="cadastro.js"></script>
+    <script type="module" src="esqSenha.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</body>
+</html>

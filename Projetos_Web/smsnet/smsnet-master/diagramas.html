@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagramas de Rede | SMS </title>
+    <link rel="stylesheet" href="css/diagramas.css">
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/291cf6cb9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo"><a href="index.html">SMSNET</a></div>
+            <div class="menu">
+                <nav class="menu-nav">
+                    <a href="diagramas.html"><button class="botao-menu"><img src="icons/globo.png" alt="globo"></button></a>
+                    <a href="equipe.html"><button class="botao-menu"><img src="icons/equipe.png" alt="globo"></button></a>
+                    <a href="servidores.html"><button class="botao-menu"><img src="icons/servidor.png" alt="globo"></button></a>
+                </nav>
+            </div>
+            </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <h1 class="titulo">Rede SMS</h1>
+            <div class="infos">
+                <h2 class="subtitulo">A nossa rede atual:</h2>
+                <p class="descricao">
+                    Montar uma infraestrutura adequada de rede para atender os usuários é essencial para
+                    uma secretaria de tamanho porte como a Secretaria Municipal de Saúde de Contagem.
+                    Para uma rede ideal, é necessário que ela seja uma <span class="target">rede segura (proteção dos
+                        dados), rápida e eficiente na comunicação interna,</span>
+                    além disso, seu desempenho deve ser constantemente monitorado. Visando um melhor entendimento da
+                    nossa rede, criamos um breve diagrama explicativo ilustrando a nossa rede atual.
+                </p>
+                <!--Caixinha da imagem-->
+                <div class="card-box">
+                    <div class="card">
+                        <img src="img/Mapeamento atual sms.jpg" alt="Diagrama atual da rede da SMS" id="diagrama-atual">
+                        <p class="legenda">Clique aqui para visualizar o diagrama</p>
+                    </div>
+                    <p class="txtDiagrama">
+                        Atualmente a SMS conta com quatro datacenters ou racks. São eles:</p>
+                    <ul class="list">
+                        <li>Rack TI (Principal)</li>
+                        <li>Rack TI (Antigo)</li>
+                        <li>Gabinete</li>
+                        <li>Visa</li>
+                    </ul>
+                    <h3>Os racks:</h3>
+                    <p class="txtDiagrama">Os racks são locais físicos onde ficam armazenados os switchs, patch panels,
+                        máquinas, cabos de rede, cabos de fibra, etc.
+                        Os switchs estão nele e são responsáveis pela <span class="target">comunicação entre
+                            dispositivos na rede.</span><br></p>
+                        <h3>Os links:</h3>
+                        <p class="txtDiagrama">
+                        Os <span class="target">links fornecem Internet</span> aos switches geralmente se localizam nas primeiras ou últimas
+                        portas, e, pelo fato de haverem muitos hosts na rede, os demais switchs são alimentados nos
+                        links através de um <span class="target">processo de cascateamento.<br></span></p><br>
+                        <h3>Os cabos:</h3>
+                        <p class="txtDiagrama">São os cabos de rede
+                        do tipo <span class="target">CAT5/CAT6</span> que saem dos switches e passam pelos patch panels que fornecem Internet
+                        cabeada para toda a Secretaria de Saúde.
+                        A ONLINE Soluções é a nossa provedora de Internet (ISP).
+                    </p>
+                </div>
+            </div>
+            <div class="infos">
+                <h2 class="subtitulo">Proposta de rede:</h2>
+                <p class="descricao">São alguns problemas da nossa rede que devem ser resolvidos:
+                    <span class="target">desorganização dos patch panels, controle descentralizado da nossa infraestrutura de rede, inexistência de switchs redudantes 
+                        a falhas, fibras ópticas ainda não alocadas, etc. </span>Em virtude disso, nós estagiários da manhã elaboramos uma proposta de rede
+                    em conjunto visando um melhor aproveitamento da rede da Secretaria Municipal de Saúde de Contagem.
+                </p>
+                <div class="card-box">
+                    <div class="new-card">
+                        <img src="img/Rede de proposta.jpg" alt="Proposta de rede da SMS" id="diagrama-futuro">
+                        <p class="legenda">Clique aqui para visualizar o diagrama</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="plantas">
+            <div class="plantas-sms">
+                <div class="nome-img">
+                    <img src="img/LEGENDA SETORES.jpeg" alt="Leganda dos setores">
+                    <p>Legenda</p>
+                </div>
+                <div class="nome-img">
+                    <img src="img/PRIMEIRO ANDAR.jpeg" alt="Planta do primeiro andar">
+                    <p>Primeiro andar SMS</p>
+                </div>
+                <div class="nome-img">
+                    <img src="img/SEGUNDO ANDAR.jpeg" alt="Planta do segundo andar">
+                    <p>Segundo andar SMS</p>
+                </div>
+                <div class="nome-img">
+                    <img src="img/LABORATORIO.jpeg" alt="laboratorio">
+                    <p>Laboratório</p>
+                </div>
+                <div class="nome-img">
+                    <img src="img/VIGILANCIA.jpeg" alt="vigilancia">
+                    <p>Vigilancia</p>
+                </div>
+                <div class="nome-img">
+                    <img src="img/TRANP IMGNOVA.jpeg" alt="transporte">
+                    <p>Transporte</p>
+                </div>
+                <div class="nome-img">
+                    <img src="img/MANUTENCAO.jpeg" alt="manutencao">
+                    <p>Manutencao</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Caixinhas criadas para manipulacao via JavaScript-->
+        <div class="div-img">
+            <span class="close"><i class="fa-solid fa-circle-xmark"></i></span>
+            <img class="modal-img">
+            <div class="caption"></div>
+        </div>
+        <div class="new-div-img">
+            <span class="new-close"><i class="fa-solid fa-circle-xmark"></i></span>
+            <img class="new-modal-img">
+            <div class="new-caption"></div>
+        </div>
+        <!------------------------------------------------------>
+    </section>
+    <footer>Coded by: <span class="target">Arthur Bacelete</span></footer>
+</body>
+
+</html>

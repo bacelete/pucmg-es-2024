@@ -1,0 +1,136 @@
+@import url(../style.css);
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section {
+  width: 32%;
+  height: 100%;
+}
+
+h2 {
+  margin: 30px 0px 10px 20px;
+}
+
+.upload-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px 5px var(--shadow-color);
+}
+
+.upload-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.plus-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: black;
+  box-shadow: 0 0 5px 5px var(--shadow-color);
+}
+
+input[type="file"] {
+  display: none;
+}
+
+section > div {
+  margin-top: 30px;
+  width: 100%;
+  height: 30%;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 80%;
+  height: 45px;
+  border: none;
+  box-shadow: 0 0 5px 5px var(--shadow-color);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px 50px 0px 50px;
+}
+
+#input_preco {
+  height: 200px;
+  font-size: 4em;
+}
+
+#container_preview {
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 5px var(--shadow-color);
+}
+
+#sect_preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#img_preview {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #000;
+  margin-top: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#img_preview img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#salvarItem {
+    background-color: var(--menu-color);
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btn_cancelar {
+    margin-top: 80px;
+    font-size: 20px;
+    color: red;
+    border: none;
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: transparent;
+    cursor: pointer;
+}

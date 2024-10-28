@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastrar-cartao.css">
+    <title>Food Flow</title>
+</head>
+<body>
+    <aside>
+        <div id="card">
+            <div id="chip"></div>
+            <h1 id="card-number"></h1>
+            <h2 id="card-name"></h2>
+        </div>
+        <div id="back-card">
+            <div id="faixa"></div>
+            <div id="info">
+                <div id="cvv-display"></div>
+                <div id="date"></div>
+            </div>       
+        </div>
+    </aside>
+    <main>
+        <h1>Cadastrar Cartão</h1>
+        <form action="">
+            <input type="text" id="nome-cartao" placeholder="Nome do titular">
+            <input type="number" id="numero-cartao" placeholder="Número do cartão">
+            <div>
+                <input type="number" id="cvv-input" placeholder="CVV">
+                <input type="date" id="data-cartao">
+            </div>
+            <button>Cadastrar</button>
+        </form>
+        <a href="../carrinho-de-compra/carrinho.html">Cancelar</a>
+    </main>
+    <script src="cadastrar-cartao.js"></script>
+</body>
+</html>

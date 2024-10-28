@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/servidores.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><a href="index.html">S M S N E T</a></div>
+            <div class="menu">
+                <nav class="menu-nav">
+                    <a href="diagramas.html"><button class="botao-menu"><img src="icons/globo.png" alt="globo"></button></a>
+                    <a href="equipe.html"><button class="botao-menu"><img src="icons/equipe.png" alt="globo"></button></a>
+                    <a href="servidores.html"><button class="botao-menu"><img src="icons/servidor.png" alt="globo"></button></a>
+                </nav>
+            </div>
+            </div>
+    </header>
+    <!-- Conteúdo principal aqui -->
+     <div type="container" class="hyperv">
+        <div class="card">
+                <h1>Explicando os servidores da T.I:</h1>
+                <p>Na secretaria municipal de saúde a maior parte dos servidores estão virtualizados. dentro de uma máquina física que chamamos de HYPER-V, nele estão contidos:</p>
+                <ul type="square">
+                    <li>Active Directory: 10.150.0.250</li>
+                    <li>Active Directory (Sei): 10.150.0.3</li>
+                    <li>Servidor de Arquivo: 10.150.0.6</li>
+                    <li>Servidor de Impressão: 10.150.0.8</li>
+                    <li>Servidor do Correios: 10.150.0.12</li>
+                    <li>Controladora: 10.150.0.12</li>
+                   </ul>
+        </div>
+        <div class="image">
+        <img src="gif/serveranimation.gif" alt="">
+        </div>
+    </div>
+    <div class="vsphere">
+        <div class="card">
+            <h1>Vsphere:</h1>
+            <p>O Vsphere é outra máquina virtual em nossa posse, essa também possuindo algumas outras máquinas virtuais em seu armazenamento: </p>
+            <ul>
+                <li>GLPI 10.140.16.23</li>
+                <li>Servidor ESUS: 10.150.0.11</li>
+                <li>Vsphere Virtual: 10.150.6.231
+                </li>
+                <li>Esus: esus.contagem.mg.gov.br:8080</li>
+                <li>Central: centralesus.contagem.mg.gov.br:8080
+                </li>
+            </ul>
+        </div>
+        <div class="image2">
+            <img src="gif/prompt.gif" alt="prompt">
+        </div>
+    </div>
+        <h1 id="specs">Especificações dos servidores</h1>
+        <div class="super">
+            <div class="HV">
+                <h3>Hyper-V:</h3>
+                <ul>
+                    <li>Modelo: ProLiant DL360 Gen10</li>
+                    <li>CPU: INTEL XEON GOLD 6130 2.10GHz</li>
+                    <li>RAM: 64gb</li>
+                    <li>Tipo de sistema: 64bits</li>
+                </ul>
+            </div>
+        <div class="ADSMS">
+            <h3>AD (SMS):</h3>
+            <ul>
+                <li>Modelo: Virtual Machine</li>
+                <li>CPU: INTEL XEON GOLD 6130 2.10GHz</li>
+                <li>RAM: 2.37gb</li>
+                <li>Tipo de sistema: 64bits</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

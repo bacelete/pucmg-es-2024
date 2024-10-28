@@ -1,0 +1,168 @@
+@font-face {
+    font-family: Inter;
+    src: url(/fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: Baskervville;
+    src: url(/fonts/Baskervville-Regular.ttf)
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display:block;
+
+}
+
+.menu-nav img {
+    cursor: pointer;
+}
+
+
+.container .logo{
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(206, 206, 206, 0.212);
+    border: 1px;
+    border-radius: 5px;
+    height: 50px;
+    width: 850px;
+    margin: auto;
+}
+.logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    padding-top: 8px;
+    font-family: Baskervville;
+    font-size: 25px;
+    text-decoration: solid;
+
+}
+.menu{
+    text-align: center;
+    padding: auto;
+    margin: auto;
+    justify-content: center;
+    width: 200px;
+}
+
+.botao-menu{
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+.botao-menu img{
+    width: 30px;
+}
+
+.Kamilly{
+    display: flex;
+    justify-content: center
+}
+.card{
+    font-size: 25px;
+    padding-left: 25px;
+    border-radius: 5px;
+    margin: 50px;
+    height: 300px;
+    width: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(255, 0, 255, 0.13);
+}
+.image{
+    display: flex;
+    margin: 50px;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0);
+}
+.image img{
+    height: 100%;
+    width: 300px;
+}
+.Arthur{
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: center;
+}
+.image2{
+    display: flex;
+    margin: 50px;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+.image2 img{
+    height: 100%;
+    width: 300px;
+    border-radius: 5px;
+    max-width: 100%;
+    transition: all 0.5s;
+}
+
+.image2:hover img{
+    transform: scale(1.2);
+}
+
+#specs{
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+    width: 50%;
+}
+.super{
+    background-color: rgba(255, 0, 255, 0);
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.super .HV{
+    background-color:  rgba(255, 0, 255, 0.13);
+    height: 125px;
+    padding-top: 5px;
+    padding-left: 45px;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.super .ADSMS{
+    background-color:  rgba(255, 0, 255, 0.13);
+    height: 125px;
+    padding-top: 5px;
+    padding-left: 45px;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.Fabricio{
+    display: flex;
+    justify-content: center;
+}
+.Lucas{
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: center;
+}
+

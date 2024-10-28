@@ -1,0 +1,410 @@
+@font-face {
+    font-family: Inter;
+    src: url(/fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: Baskervville;
+    src: url(/fonts/Baskervville-Regular.ttf)
+}
+body{
+    background-color: rgba(255, 255, 255, 0.993);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FONTES UTILIZADAS */
+@font-face {
+    font-family: Inter;
+    src: url(/fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: Baskervville;
+    src: url(/fonts/Baskervville-Regular.ttf)
+}
+
+@font-face {
+    font-family: Meditative;
+    src: url(/fonts/Meditative.ttf)
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.header{
+    display:block;
+
+}
+.header .logo{
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(206, 206, 206, 0.212);
+    border: 1px;
+    border-radius: 5px;
+    height: 50px;
+    width: 850px;
+    margin: auto;
+}
+.logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    padding-top: 8px;
+    font-family: Baskervville;
+    font-size: 25px;
+    text-decoration: solid;
+
+}
+.menu{
+    text-align: center;
+    padding: auto;
+    margin: auto;
+    justify-content: center;
+    width: 200px;
+}
+
+.menu-nav img {
+    cursor: pointer;
+}
+
+.botao-menu{
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+.botao-menu img{
+    width: 30px;
+}
+
+
+section {
+    background-color: #ffffff;
+}
+
+.container {
+    display: inline-block;
+    margin: 30px 20px;
+}
+
+.titulo {
+    font-family: Inter;
+    border-bottom: 1px solid rgb(255, 253, 253);
+    margin-bottom: 15px;
+}
+
+.subtitulo {
+    font-family: Baskervville;
+}
+
+.infos {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    line-height: 1.5pc;
+}
+.infos .card-box .new-card img{
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.descricao {
+    margin-top: 15px;
+    font-family: Baskervville;
+}
+
+.target {
+    font-weight: bolder;
+    font-family: Baskervville;
+    color: #926cc4;
+}
+
+.target:hover {
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+.card-box {
+    display: inline-block;
+    justify-content: center;
+    margin-top: 15px;
+    width: 100%;
+    background-color: #fcfcfc;
+}
+
+.card {
+    display: block;
+    float: left;
+    border-radius: 5px;
+    margin-right: 30px;
+    width: 32%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.466);
+    transition: 0.3s;
+    transform: transform .2s;
+    text-align: center;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.legenda {
+    color: #4d044d;
+    font-size: 15px;
+    width: 100%;
+    padding: 10px;
+    font-family: Inter;
+    font-weight: 400;
+    background-color: #f064f0;
+    border-radius: 2px;
+    border-bottom: 5px solid #bd5abd;
+}
+
+#diagrama-atual {
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+
+}
+
+.div-img {
+    display: none;
+    position: fixed;
+    /*Para manter a div fixa.*/
+    left: 0;
+    top: 0;
+    overflow: auto;
+    /* Fazer ela ocupar 100% da página: */
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    /*---*/
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+    padding-top: 20px;
+}
+
+.modal-img {
+    margin: auto;
+    display: block;
+    z-index: 1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    background-color: #926cc4
+}
+
+.txtDiagrama {
+    display: block;
+    margin-top: 10px;
+    max-width: 100%;
+    font-family: Baskervville;
+}
+
+.list {
+    display: block;
+    font-size: larger;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 100%;
+    padding: 10px;
+    background-color: #c457c4;
+    border-bottom: 10px solid #aa4faa;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.26);
+    cursor: pointer;
+    width: 60%;
+}
+
+
+.list li {
+    list-style-type: none;
+}
+
+h3 {
+    margin-top: 15px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+.caption {
+    display: block;
+    font-family: Baskervville;
+    font-size: large;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+
+}
+
+.close {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 0px;
+    padding-top: 10px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 30px;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0.1)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+footer {
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 5px;
+    background-color: #f1f1f1;
+}
+
+#diagrama-futuro {
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+    
+}
+
+.new-card {
+    display: block;
+    border-radius: 4px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 35%;
+    background-color: #ff18ff;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.247), 0 2px 5px 0 rgba(0, 0, 0, 0.466);
+    transition: 0.3s;
+    transform: transform .2s;
+    text-align: center;
+}
+
+
+.new-card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.new-div-img {
+    display: none;
+    position: fixed;
+    /*Para manter a div fixa.*/
+    left: 0;
+    top: 0;
+    overflow: auto;
+    /* Fazer ela ocupar 100% da página: */
+    width: 100%;
+    height: 100%;
+    /*---*/
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+    padding-top: 20px;
+}
+
+.new-modal-img {
+    margin: auto;
+    display: block;
+    z-index: 1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+    background-color: #926cc4
+}
+.new-caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+.new-caption {
+    display: block;
+    font-family: Baskervville;
+    font-size: large;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+
+}
+
+.new-close {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 0px;
+    padding-top: 10px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.plantas-sms {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.plantas-sms img{
+    width: 600px;
+    height: 200px;
+}
+.nome-img {
+    width: auto;
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative; /* Para posicionar a legenda em relação à imagem */
+}
+
+.nome-img img {
+    width: 100%; /* Ajuste o tamanho da imagem conforme necessário */
+}
+
+.nome-img p {
+    justify-content: center;
+    position: sticky;
+    bottom: 0; /* Posiciona a legenda na parte inferior da imagem */
+    left: 0; /* Alinha a legenda à esquerda */
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo da legenda (pode ajustar a cor) */
+    color: #fff; /* Cor do texto da legenda */
+    padding: 8px; /* Espaçamento interno da legenda */
+    font-size: 14px; /* Tamanho da fonte da legenda */
+}

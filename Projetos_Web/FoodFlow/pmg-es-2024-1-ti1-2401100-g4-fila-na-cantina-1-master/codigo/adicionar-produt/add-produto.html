@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add-produto.css">
+    <title>Adicionar Produto</title>
+</head>
+<body>
+    <header>
+        <h1>Adicionar Produto</h1>
+    </header>
+    <aside>
+        <img src="../assets/img/logo.svg" alt="Logo" id="logo_menu">
+        <div id="views_btn">
+            <a class="menu_btn" href="../lista-estabelecimento/lista-estabelecimento.html"><i class="ph-bold ph-house"></i></a>
+            <a class="menu_btn activate_btn" href="#"><i class="ph-bold ph-coffee"></i></a>
+        </div>
+    </aside>
+    <main>
+        <section>
+            <h2>Imagem do Item -></h2>
+            <div>
+                <div class="upload-container">
+                    <label for="imageUpload" class="upload-label">
+                        <div class="plus-circle">+</div>
+                    </label>
+                    <input type="file" id="imageUpload" accept="image/*" />
+                </div>
+                <p>Formatos: svg, png, jpeg</p>
+            </div>
+            <h2>Nome do Item -></h2>
+            <input type="text" placeholder="Nome do item:">
+        </section>
+        <section>
+            <h2>Preço do Item -></h2>
+            <div>
+            <input type="number" placeholder="R$ 0,00:" id="input_preco">
+            </div>
+            <h2>Quantidade Diária -></h2>
+            <input type="number" placeholder="Quantidade:" id="input_quantidade">
+        </section>
+        <section id="sect_preview">
+            <div id="container_preview">
+                <div id="img_preview">
+                    <img id="img_preview_element" src="" alt="">
+                </div>
+                <h3 id="name_preview"></h3>
+                <h4 id="qtd_preview"></h4>
+                <h4 id="price_preview"></h4>
+            </div>
+            <button id="salvarItem">Salvar</button>
+            <a id="btn_cancelar" href="#">Cancelar</a>
+        </section>
+    </main>
+    <script src="add-produto.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</body>
+</html>

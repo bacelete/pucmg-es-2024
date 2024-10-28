@@ -1,0 +1,35 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: FoodFlow
+authors:
+  - family-names: Teixeira e Silva Bacelete
+    given-names: Arthur Henrique 
+  - family-names: Benjamin Guimarães
+    given-names: Davi 
+  - family-names: Nestor Celino
+    given-names: André 
+  - family-names: Araújo Monteiro
+    given-names: Felipe 
+  - family-names: Tavares e Amorim
+    given-names: João Pedro 
+  - family-names: Augusto dos Reis Junior
+    given-names: Alexandre 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: de Faria Barros
+    given-names: Diego Augusto 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Alves Nogueira
+    given-names: Simone 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Boechat Seufitelli
+    given-names: Danilo 
+keywords:
+  - Fila virtual
+  - Cantina
+repository-code: https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2401100-g4-fila-na-cantina-1
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2024-07-01
