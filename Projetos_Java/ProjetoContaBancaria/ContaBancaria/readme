@@ -1,0 +1,7 @@
+Uma conta bancária é identificada pelo seu número de 5 dígitos e contém o CPF de seu proprietário. As contas bancárias permitem operações de saque e depósito. 
+A operação de saque tem uma regra especial, permitindo que o cliente faça um saque acima do seu saldo – o que é chamado de limite. 
+Por exemplo, se uma conta tem saldo de R$200 e limite de R$100, seu cliente pode sacar até R$300. O saldo fica negativo e, no próximo depósito, 
+a conta cobrará uma taxa de 3% sobre este valor negativo, descontando do próprio valor de depósito.
+Para a situação apresentada, modele uma classe utilizando UML e implemente seu código em Java. 
+Implemente uma aplicação para simular algumas operações de saque e de depósito em algumas contas bancárias.
+Lembre-se de utilizar os modificadores de acesso em seus métodos e atributos.
